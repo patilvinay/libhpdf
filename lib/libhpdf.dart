@@ -33,7 +33,7 @@ Future<int> sumAsync(int a, int b) async {
   return completer.future;
 }
 
-const String _libName = 'libhpdf';
+const String _libName = 'hpdf';
 
 /// The dynamic library in which the symbols for [LibhpdfBindings] can be found.
 final DynamicLibrary _dylib = () {
