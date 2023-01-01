@@ -49,6 +49,14 @@ flutter:
       windows:
         ffiPlugin: true
 
+ffigen:
+  name: 'LibHaruFFI'
+  description: 'Written for the FFI article'
+  output: 'lib/generated_bindings.dart'
+  headers:
+    entry-points:
+      - 'libharu/include/hpdf.h'
+
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
