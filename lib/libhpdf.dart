@@ -14,7 +14,7 @@ export 'generated_bindings.dart';
 /// only do this for native functions which are guaranteed to be short-lived.
 // int sum(int a, int b) => _bindings.sum(a, b);
 
-const String _libName = 'haru';
+const String _libName = 'hpdf';
 
 /// The dynamic library in which the symbols for [LibhpdfBindings] can be found.
 final DynamicLibrary _dylib = () {
@@ -25,7 +25,7 @@ final DynamicLibrary _dylib = () {
     return DynamicLibrary.open('lib$_libName.so');
   }
   if (Platform.isWindows) {
-    return DynamicLibrary.open('lib$_libName.dll');
+    return DynamicLibrary.open('$_libName.dll');
   }
   throw UnsupportedError('Unknown platform: ${Platform.operatingSystem}');
 }();
