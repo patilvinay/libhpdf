@@ -14054,7 +14054,7 @@ abstract class _HPDF_TransitionStyle {
   static const int HPDF_TS_EOF = 17;
 }
 
-abstract class _HPDF_PageSizes {
+abstract class HPDF_PageSizes {
   static const int HPDF_PAGE_SIZE_LETTER = 0;
   static const int HPDF_PAGE_SIZE_LEGAL = 1;
   static const int HPDF_PAGE_SIZE_A3 = 2;
@@ -14070,7 +14070,7 @@ abstract class _HPDF_PageSizes {
   static const int HPDF_PAGE_SIZE_EOF = 12;
 }
 
-abstract class _HPDF_PageDirection {
+abstract class HPDF_PageDirection {
   static const int HPDF_PAGE_PORTRAIT = 0;
   static const int HPDF_PAGE_LANDSCAPE = 1;
 }
@@ -14089,7 +14089,7 @@ abstract class _HPDF_ByteType {
   static const int HPDF_BYTE_TYPE_UNKNOWN = 3;
 }
 
-abstract class _HPDF_TextAlignment {
+abstract class HPDF_TextAlignment {
   static const int HPDF_TALIGN_LEFT = 0;
   static const int HPDF_TALIGN_RIGHT = 1;
   static const int HPDF_TALIGN_CENTER = 2;

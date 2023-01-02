@@ -5,7 +5,7 @@
 cmake_minimum_required(VERSION 3.14)
 
 # Project-level configuration.
-set(PROJECT_NAME "libhpdf")
+set(PROJECT_NAME "hpdf")
 project(${PROJECT_NAME} LANGUAGES CXX)
 
 # Invoke the build for native code shared with the other target platforms.
@@ -15,9 +15,9 @@ add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/../libharu" "${CMAKE_CURRENT_BINAR
 # List of absolute paths to libraries that should be bundled with the plugin.
 # This list could contain prebuilt libraries, or libraries created by an
 # external build triggered from this build file.
-set(libhpdf_bundled_libraries
+set(hpdf_bundled_libraries
   # Defined in ../src/CMakeLists.txt.
   # This can be changed to accomodate different builds.
-  $<TARGET_FILE:libhpdf>
+  $<TARGET_FILE:hpdf>
   PARENT_SCOPE
 )
